@@ -81,7 +81,7 @@ int main(int argc, char *argv[]) {
     double loss = ((sent - received) / (double)sent) * 100.0;
     double avg_rtt = (received > 0) ? sum_rtt / received : 0;
 
-    printf("\n--- %s ping statistics ---\n", server_name);
+    printf("--- %s ping statistics ---\n", server_name);
     printf("%d packets transmitted, %d received, %d%% packet loss\n", sent, received, (int)loss);
     if (received > 0)
     printf("rtt min/avg/max = %.3f %.3f %.3f ms\n", min_rtt, avg_rtt, max_rtt);
